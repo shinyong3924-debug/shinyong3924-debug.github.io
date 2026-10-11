@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, 'Malgun Gothic', sans-serif;
+    background: #fff;
+    color: #202124;
+    min-height: 100vh;
+}
+
+.top-left {
+    position: absolute;
+    top: 16px;
+    left: 20px;
+}
+
+.sdu-logo-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: #202124;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.sdu-text {
+    background: #003b8e;
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 4px;
+    letter-spacing: 1px;
+}
+
+.top-right {
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.weather-widget {
+    font-size: 13px;
+    color: #5f6368;
+    padding: 6px 12px;
+    border: 1px solid #dadce0;
+    border-radius: 16px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30vh;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.search-form {
+    width: 100%;
+    max-width: 584px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    height: 46px;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    padding: 0 16px;
+}
+
+.search-box:hover,
+.search-box:focus-within {
+    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+    border-color: rgba(223, 225, 229, 0);
+}
+
+.search-icon {
+    width: 20px;
+    height: 20px;
+    fill: #9aa0a6;
+    margin-right: 12px;
+}
+
+.search-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 28px;
+}
+
+.btn {
+    background: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-size: 14px;
+    padding: 0 16px;
+    height: 36px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    border-color: #dadce0;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.quote-box {
+    margin-top: 48px;
+    max-width: 584px;
+    text-align: center;
+}
+
+#quote-text {
+    font-size: 16px;
+    color: #3c4043;
+    line-height: 1.6;
+}
+
+#quote-author {
+    margin-top: 8px;
+    font-size: 13px;
+    color: #70757a;
+}
+
+@media (max-width: 600px) {
+    .top-right {
+        top: 56px;
+        left: 20px;
+        right: auto;
+    }
+}
